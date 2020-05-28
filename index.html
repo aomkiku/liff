@@ -75,17 +75,17 @@
     }
 
     function getEnvironment() {
-      ducument.getEnvironmentById("os").append(liff.getOs())
-      ducument.getEnvironmentById("language").append(liff.getLanguage())
-      ducument.getEnvironmentById("version").append(liff.getVersion())
-      ducument.getEnvironmentById("accessToken").append(liff.getAccessToken())
-      ducument.getEnvironmentById("isInClient").append(liff.getisInClient())
+      ducument.getElementById("os").append(liff.getOS())
+      ducument.getElementById("language").append(liff.getLanguage())
+      ducument.getElementById("version").append(liff.getVersion())
+      ducument.getElementById("accessToken").append(liff.getAccessToken())
+      ducument.getElementById("isInClient").append(liff.getisInClient())
       if (liff.isInClient()){
-        document.getEnvironmentById("btnLogOut").style.display = "none"
+        document.getElementById("btnLogOut").style.display = "none"
     } else {
-     ducument.getEnvironmentById("btnMsg").style.display = "none"
-     ducument.getEnvironmentById("btnScanCode").style.display = "none" 
-     ducument.getEnvironmentById("btnClose").style.display = "none"
+     ducument.getElementById("btnMsg").style.display = "none"
+     ducument.getElementById("btnScanCode").style.display = "none" 
+     ducument.getElementById("btnClose").style.display = "none"
      } 
     }
 
